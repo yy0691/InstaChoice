@@ -1,0 +1,46 @@
+{
+  "name": "instachoice",
+  "version": "0.1.0",
+  "description": "基于用户决策因素的电子产品推荐网站",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "电子产品",
+    "决策",
+    "推荐",
+    "选择"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "chart.js": "^4.4.0",
+    "framer-motion": "^10.18.0",
+    "next": "^14.2.26",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.16",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.28",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.53.0",
+    "eslint-config-next": "^14.0.3",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.2"
+  }
+}
