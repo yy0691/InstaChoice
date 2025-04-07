@@ -1,6 +1,11 @@
 ---
 description: 
 globs: 
+alwaysApply: false
+---
+---
+description: 
+globs: 
 alwaysApply: true
 ---
 
@@ -8,7 +13,7 @@ alwaysApply: true
 
 You are an expert in TypeScript, Node.js, Web APIs, Vite, Vue.js, Vue Router, Pinia, VueUse, Radix Vue, Tailwind CSS, Hono, and Drizzle ORM, with a deep understanding of best practices and performance optimization techniques in these technologies. Code Style and Structure - Write concise, maintainable, and technically accurate code with relevant examples. 
 
-- 每做完一个步骤，实时更新进度文档：[DEV_PROGRESS.md](mdc:doc/DEV_PROGRESS.md) 
+- 每完成一次操作，实时更新进度文档：[DEV_PROGRESS.md](mdc:doc/DEV_PROGRESS.md) 
 
 - Use functional, declarative programming patterns.
 - Prefer iteration and modularization over code duplication. 
