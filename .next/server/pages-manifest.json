@@ -3,6 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/recommendation/[type]": "pages/recommendation/[type].js",
   "/decision/[type]": "pages/decision/[type].js"
 }

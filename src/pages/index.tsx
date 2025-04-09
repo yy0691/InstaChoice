@@ -10,6 +10,7 @@ import { isClient, safeLocalStorage, setSafeLocalStorage, generateRandomPrice } 
 import { testDatabaseConnection, productService } from '@/lib/supabase';
 import { ProductType } from '@/types/product';
 
+//产品类型
 const productTypes = [
   {
     id: 'mobile',
@@ -19,9 +20,7 @@ const productTypes = [
     gradient: 'from-[#FF9494] to-[#FF3D84]',
     bgGradient: 'bg-gradient-to-br from-[#FF9494] to-[#FF3D84]',
     iconBg: 'rgba(255, 61, 132, 0.2)',
-    shadow: 'group-hover:shadow-lg group-hover:shadow-[#FF9494]/30',
-    badge: '热门',
-    badgeColor: 'bg-red-500'
+    shadow: 'group-hover:shadow-lg group-hover:shadow-[#FF9494]/30'
   },
   {
     id: 'computer',
@@ -31,9 +30,7 @@ const productTypes = [
     gradient: 'from-[#6FEE8D] to-[#17C964]',
     bgGradient: 'bg-gradient-to-br from-[#6FEE8D] to-[#17C964]',
     iconBg: 'rgba(23, 201, 100, 0.2)',
-    shadow: 'group-hover:shadow-lg group-hover:shadow-[#6FEE8D]/30',
-    badge: '推荐',
-    badgeColor: 'bg-green-500'
+    shadow: 'group-hover:shadow-lg group-hover:shadow-[#6FEE8D]/30'
   },
   {
     id: 'mouse',
@@ -43,9 +40,7 @@ const productTypes = [
     gradient: 'from-[#FFAA85] to-[#F8983A]',
     bgGradient: 'bg-gradient-to-br from-[#FFAA85] to-[#F8983A]',
     iconBg: 'rgba(248, 152, 58, 0.2)',
-    shadow: 'group-hover:shadow-lg group-hover:shadow-[#FFAA85]/30',
-    badge: '新品',
-    badgeColor: 'bg-orange-500'
+    shadow: 'group-hover:shadow-lg group-hover:shadow-[#FFAA85]/30'
   },
   {
     id: 'keyboard',
@@ -55,9 +50,7 @@ const productTypes = [
     gradient: 'from-[#BD9EFD] to-[#886CE4]',
     bgGradient: 'bg-gradient-to-br from-[#BD9EFD] to-[#886CE4]',
     iconBg: 'rgba(136, 108, 228, 0.2)',
-    shadow: 'group-hover:shadow-lg group-hover:shadow-[#BD9EFD]/30',
-    badge: '热门',
-    badgeColor: 'bg-purple-500'
+    shadow: 'group-hover:shadow-lg group-hover:shadow-[#BD9EFD]/30'
   },
   {
     id: 'monitor',
@@ -67,12 +60,11 @@ const productTypes = [
     gradient: 'from-[#79F0D0] to-[#36B89E]',
     bgGradient: 'bg-gradient-to-br from-[#79F0D0] to-[#36B89E]',
     iconBg: 'rgba(54, 184, 158, 0.2)',
-    shadow: 'group-hover:shadow-lg group-hover:shadow-[#79F0D0]/30',
-    badge: '精选',
-    badgeColor: 'bg-teal-500'
+    shadow: 'group-hover:shadow-lg group-hover:shadow-[#79F0D0]/30'
   },
 ];
 
+// 
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -246,11 +238,7 @@ export default function Home() {
                 {/* 卡片发光效果 */}
                 <div className={`absolute -inset-0.5 ${type.bgGradient} opacity-0 group-hover:opacity-15 rounded-2xl blur-sm transition-opacity duration-500 dark:group-hover:opacity-10`}></div>
               
-                {/* 角标标签 */}
-                <div className={`absolute z-20 top-0 right-0 ${type.badgeColor} text-white text-xs font-medium py-1 px-3 rounded-bl-lg rounded-tr-lg shadow-sm`}>
-                  {type.badge}
-                </div>
-                
+                            
                 {/* 卡片背景渐变效果 */}
                 <div className={`card-bg absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-500 ${type.bgGradient}`}></div>
                 
